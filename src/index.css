@@ -1,0 +1,20 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+  font-family: 'Inter', sans-serif;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.grid-header .MuiGrid-item:first-child {
+  padding-left: 0;
+}
+
+@media (max-width: 900px) {
+  .grid-header .MuiGrid-item:not(:last-child) {
+    padding-left: 0 !important;
+  }
+}
