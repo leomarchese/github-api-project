@@ -29,8 +29,6 @@ const INITIAL_STATE: RepoState = {
 const REPO_TYPES = ACTION_TYPES['repo'];
 
 export default (state = INITIAL_STATE, action: Action) => {
-  const { payload } = action;
-
   switch (action.type) {
     case REPO_TYPES.CLEAR_STATE:
       return INITIAL_STATE;
