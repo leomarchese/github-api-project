@@ -1,0 +1,35 @@
+export type Types = {
+  CLEAR_STATE: string;
+  SET_DATA: string;
+  SET_LOADING: string;
+  SET_HISTORY: string;
+  SET_ERROR: string;
+  SET_LOADING_USER_REPOS?: string;
+  SET_ERROR_USER_REPOS?: string;
+  SET_USER_REPOS?: string;
+}
+
+export type ActionTypes = {
+  repo: Types;
+  users: Types;
+}
+
+export const ACTION_TYPES: ActionTypes = {
+  repo: {
+    CLEAR_STATE: 'CLEAR_STATE',
+    SET_DATA: 'SET_DATA',
+    SET_LOADING: 'SET_REPOSITORY_LOADING',
+    SET_HISTORY: 'SET_REPOSITORY_HISTORY',
+    SET_ERROR: 'SET_REPOSITORY_ERROR',
+  },
+  users: {
+    CLEAR_STATE: 'CLEAR_STATE',
+    SET_DATA: 'SET_DATA',
+    SET_LOADING: 'SET_USERS_LOADING',
+    SET_HISTORY: 'SET_USERS_HISTORY',
+    SET_ERROR: 'SET_USERS_ERROR',
+    SET_LOADING_USER_REPOS: 'SET_LOADING_USER_REPOS',
+    SET_ERROR_USER_REPOS: 'SET_ERROR_USER_REPOS',
+    SET_USER_REPOS: 'SET_USER_REPOS',
+  }
+}
