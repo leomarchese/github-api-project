@@ -32,5 +32,5 @@ export type Error = {
 
 export type Action = {
   type: string,
-  payload: User | Repo | Repos | Error
+  payload?: User | Repo | Repos | Error
 }
